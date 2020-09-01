@@ -1,13 +1,19 @@
 html {
       scroll-behavior: smooth;
 }
+
 body {
       padding: 0;
       margin: 0;
-
 }
 
-/* apple orange: #ff9f0c */
+.section {
+      height: 100vh;
+}
+
+.double-section {
+      height: 200vh;
+}
 
 a { 
       color: inherit;
@@ -33,9 +39,6 @@ li {
       margin: 0 20px 0 20px;
  }
 
-.section {
-      height: 100vh;
-}
 
 #nav {
       font-size: 10pt;
@@ -45,6 +48,13 @@ li {
       top: 50px;
       right: 180px;
       margin: 0;
+}
+
+#down-arrow {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(180deg);
 }
 
 .nav-active {
@@ -79,18 +89,11 @@ li {
 
 #portfolio {
       background: #020202;
+      padding: 120px 180px 0 180px;
 }
 
 #contact {
-      background: #050505;
-}
-
-footer {
-      font-family: circular-medium;
-      font-size: 10pt;
-      text-align: center;
-      color: #202020;
-      margin-bottom: 5px;
+      background: black;
 }
 
 .heading {
@@ -98,7 +101,6 @@ footer {
       font-family: circular-bold;
       font-size: 62pt;
       color: #fff;
-      width: 430px;
       margin: 0;
 }
 
@@ -113,19 +115,15 @@ footer {
       font-family: sig;
       src: url('../font/sig.otf');
 }
-
 @font-face {
       font-family: circular-bold;
       src: url('../font/circular-bold.otf');
 }
-
 @font-face {
       font-family: circular-medium;
       src: url('../font/circular-medium.otf');
 }
-
 @keyframes fadeIn {from{opacity:0}to{opacity:1}}
-/*
 .fade-in {
       opacity: 0;
       animation: fadeIn ease-in 1;
@@ -133,15 +131,12 @@ footer {
       animation-duration:0.7s;
       transition: transform 300ms linear;
 }
-
 .fade-in.one {
       animation-delay: 0.3s;
-    }
-    
-    .fade-in.two {
+    } 
+.fade-in.two {
       animation-delay: 0.8s;
-    }
-    
-    .fade-in.three {
+}
+.fade-in.three {
       animation-delay: 1.3s;
-    }
+}
