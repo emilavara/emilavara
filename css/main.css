@@ -11,10 +11,6 @@ body {
       height: 100vh;
 }
 
-.double-section {
-      height: 200vh;
-}
-
 a { 
       color: inherit;
       text-decoration: none;
@@ -42,7 +38,7 @@ li {
 
 #nav {
       font-size: 10pt;
-      font-family: circular-medium;
+      font-family: circular-bold;
       color: #606060;
       position: absolute;
       top: 50px;
@@ -51,16 +47,22 @@ li {
 }
 
 #down-arrow {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      transform: rotate(180deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      margin-left: auto; 
+      margin-right: auto; 
+      filter: invert(100);
 }
 
 .nav-active {
       color: #e38f0e;
 }
 
+.product-container {
+
+}
 
 #home {
       background: black;
@@ -71,6 +73,7 @@ li {
       position: relative;
       top: 50%;
       transform: translate(0, -50%);
+      text-align: center;
 }
 
 #logo {
@@ -80,6 +83,14 @@ li {
       pointer-events: none;
 }
 
+#header-heading {
+      text-align: center;
+}
+
+#socials {
+      margin: 0 100px 0 100px;
+}
+
 .learn-more {
       font-family: circular-medium;
       font-size: 20pt;
@@ -87,13 +98,22 @@ li {
       margin: 0;
 }
 
+#profile-picture {
+      border-radius: 50%;
+}
+
 #portfolio {
+      background: #000000;
+      padding: 0px 180px 0 180px;
+}
+
+#about {
       background: #020202;
-      padding: 120px 180px 0 180px;
+      padding: 0px 180px 0 180px;
 }
 
 #contact {
-      background: black;
+      background: #020202;
 }
 
 .heading {
@@ -106,8 +126,8 @@ li {
 
 .subheading {
       font-family: circular-medium;
-      font-size: 20pt;
-      color: #606060;
+      font-size: 30pt;
+      color: #808080;
       margin: 0;
 }
 

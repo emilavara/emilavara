@@ -2,38 +2,49 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="icon" type="image/png" href="img/favicon2.png"/>
         <title>emil avara.</title>
         <meta charset="utf-8">
     </head>
 <body>
+    <div id="logo" class=""><img src="img/logo.png" height="35px"></div>
     <div id="nav" class="">
         <ul>
-            <li><a href="#home" class="nav-active">about</a></li>
+            <li><a href="#home" class="nav-active">home</a></li>
+            <li><a href="#about">about</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </div>
         <div id="home" class="section">
-            <div id="logo" class=""><img src="img/logo.png" height="35px"></div>
+            
                 <div id="home-content" class="">
-                        <span class="heading">Hello, I'm <br> Emil Avara.</span> <br>
+                        <img id="profile-picture" src="img/memeorange.png" height="140px"> <br>
+                        <span class="heading">Emil Avara.</span> <br>
                         <span class="subheading">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, vero. <br> 
-                            Tempora optio, rem  quam excepturi ab saepe minus id. Suscipit quaerat eos! <br>
-                            Debitis dolorem laboriosam culpa esse sunt pariatur.
+                            student, designer & developer.
                         </span> <br> <br>
-                        <span class="learn-more"><a>Learn more</a></span>
+                        <div id="socials" class="">
+                            <a href="https://twitter.com/emilavara"><img src="img/twitter.png" height="55px"></a> &nbsp;
+                            <a href="https://github.com/emilavara"><img src="img/github.png" height="55px"></a> &nbsp;
+                            <a href="https://linkedin.com/emilavara"><img src="img/linkedin.png" height="55px"></a> &nbsp;
+                        </div>
+                        <!-- <span class="learn-more"><a>Learn more</a></span> -->
                 </div>
         </div>
-        <div id="portfolio" class="double-section">
-            <p class="heading">My Work.</p>
+        <div id="about" class="section">
+            <div class="heading">about me</div>
+        </div>
+        <div id="portfolio" class="section">
+            <div id="portfolio-content">
+                <p class="heading">My Work.</p>
+            </div>
         </div>
         <div id="contact" class="section">
-            <p class="heading">Contact me.</p>
+            <div class="heading">contact me.</div>
         </div>
 
-        <a href="#home"><img id="down-arrow" src="img/down-arrow.gif" height="55px" title="go back to the top!"></a>
+        <a href="#about"><img id="down-arrow" src="img/down-arrow.gif" height="105px" title="go back to the top!"></a>
 </body>
 </html>
