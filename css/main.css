@@ -218,7 +218,7 @@ li {
 }
 
 #contact-picture {
-      padding-top: 60px;
+      padding-top: 40px;
       margin: auto;
       width: 100px;
       height: 100xp;
@@ -234,6 +234,40 @@ li {
       font-size: 62pt;
       color: #fff;
       margin: 0;
+}
+
+.contact-subheading {
+      font-family: circular-bold;
+      font-size: 22pt;
+      color: #fff;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+}
+
+.contact-icons {
+      padding-left: 15px;
+}
+
+.contact-icons img {
+}
+
+.contact-paragraph {
+      font-family: circular-bold;
+      font-size: 11pt;
+      color: #606060;
+      text-transform: uppercase;
+      position: relative;
+      top: -7px;
+      left: 10px;
+}
+
+#back-up {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      filter: invert(100);
+      transform: rotate(180deg);
 }
 
 #footer {
