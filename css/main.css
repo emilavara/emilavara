@@ -56,6 +56,22 @@ li {
       filter: invert(100);
 }
 
+#about-me-picture {
+      border-radius: 50%;
+      float: left;
+      margin-top: 45px;
+      margin-right: 40px;
+}
+
+.vl {
+      height: 365px;
+      float: left;
+      width: 1px;
+      background-color: #151515;
+      margin-right: 40px;
+      margin-top: 10px;
+}
+
 .nav-active {
       color: #e38f0e;
 }
@@ -76,6 +92,13 @@ li {
       text-align: center;
 }
 
+#about-content {
+      margin: 0 0px 0 10px;
+      position: relative;
+      top: 50%;
+      transform: translate(0, -50%);
+}
+
 #logo {
       position: absolute;
       top: 50px;
@@ -83,16 +106,12 @@ li {
       pointer-events: none;
 }
 
-#header-heading {
-      text-align: center;
-}
-
 #socials {
       margin: 0 100px 0 100px;
 }
 
 .learn-more {
-      font-family: circular-medium;
+      font-family: circular-bold;
       font-size: 20pt;
       color: #e38f0e;
       margin: 0;
@@ -108,7 +127,7 @@ li {
 }
 
 #about {
-      background: #020202;
+      background: #050505;
       padding: 0px 180px 0 180px;
 }
 
@@ -127,6 +146,13 @@ li {
 .subheading {
       font-family: circular-medium;
       font-size: 30pt;
+      color: #808080;
+      margin: 0;
+}
+
+.paragraph {
+      font-family: circular-medium;
+      font-size: 20pt;
       color: #808080;
       margin: 0;
 }
