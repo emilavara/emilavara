@@ -88,6 +88,13 @@ li {
       color: #808080;
       margin: 0;
 }
+
+.footer-text {
+      font-family: circular-medium;
+      font-size: 10pt;
+      color: #141414;
+}
+
 /* eof Main */
 
 /* Home */
@@ -116,7 +123,6 @@ li {
 #about {
       background: #050505;
       padding: 0px 180px 0 180px;
-      height: 100vh;
       position: relative; /* keep position relative
       so that aboslute elements listens to the section*/
 }
@@ -144,6 +150,13 @@ li {
       transform: translate(0, -50%);
 }
 
+.learn-more {
+      font-family: circular-bold;
+      font-size: 20pt;
+      color: #e38f0e;
+      margin: 0;
+}
+
 #adobe {
       position: absolute;
       left: 0px;
@@ -155,27 +168,83 @@ li {
 }
 /* eof About */
 
-
-
-.learn-more {
-      font-family: circular-bold;
-      font-size: 20pt;
-      color: #e38f0e;
-      margin: 0;
-}
-
-
-
+/* Portfolio */
 #portfolio {
       background: #000000;
       padding: 0px 180px 0 180px;
 }
+/* eof Portfolio */
 
-
-
+/* Contact */
 #contact {
       background: #020202;
+      position: relative;
+      padding: 0 180px 0 180px;
 }
+
+#contact-content {
+      padding-top: 20px;
+      height: 600px;
+      width: 1000px;
+      /* background: rgba(197, 37, 37, 0.25); */
+      margin: auto;
+      position: relative;
+}
+
+#contact-form {
+      width: 750px;
+      height: 500px;
+      background: #090909;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 80px;
+      z-index: 0;
+      border-radius: 5px;
+}
+
+#contact-card {
+      width: 280px;
+      height: 450px;
+      background: #121212;
+      z-index: 1;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 60px;
+      border-top: solid 6px #e38f0e;
+      border-radius: 5px;
+      box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.25);
+}
+
+#contact-picture {
+      padding-top: 60px;
+      margin: auto;
+      width: 100px;
+      height: 100xp;
+}
+
+#contact-picture img {
+      border-radius: 50%;
+}
+
+.contact-heading {
+      padding-top: 100px;
+      font-family: circular-bold;
+      font-size: 62pt;
+      color: #fff;
+      margin: 0;
+}
+
+#footer {
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+}
+/* eof Contact */
 
 
 
