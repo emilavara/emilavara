@@ -178,6 +178,7 @@ li {
 /* eof Portfolio */
 
 /* Contact */
+
 #contact {
       background: #020202;
       position: relative;
@@ -185,12 +186,15 @@ li {
 }
 
 #contact-content {
-      padding-top: 20px;
       height: 600px;
       width: 1000px;
-      /* background: rgba(197, 37, 37, 0.25); */
-      margin: auto;
-      position: relative;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
 }
 
 #contact-form {
@@ -247,11 +251,20 @@ li {
       margin-bottom: 20px;
 }
 
+.contact-form-subheading {
+      font-family: circular-bold;
+      font-size: 26pt;
+      color: #fff;
+      text-align: center;
+      margin-left: -68px;
+}
+
 .contact-icons {
       padding-left: 15px;
 }
 
 .contact-icons img {
+
 }
 
 .contact-paragraph {
@@ -262,6 +275,62 @@ li {
       position: relative;
       top: -7px;
       left: 10px;
+}
+
+#form-container {
+      position: absolute;
+      left: 265px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 386px;
+}
+
+.name {
+      padding-left: 200px;
+      width: 190px;
+      padding: 12px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-right: 1px;
+      margin-top: 6px;
+      margin-bottom: 0px;
+      resize: none;
+      border: none;
+      background: #151515;
+      font-family: circular-bold;
+      font-size: 11pt;
+      color: white;
+}
+
+.message, .mail{
+      width: 386px;
+      padding: 12px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 0px;
+      resize: none;
+      border: none;
+      background: #151515;
+      font-family: circular-bold;
+      font-size: 11pt;
+      color: white;
+}
+
+::placeholder {
+      color: #505050;
+}
+
+.button {
+      font-family: circular-bold;
+      font-size: 11pt;
+      width: 110px;
+      height: 40px;
+      border-radius: 4px;
+      border: none;
+      float: right;
+      margin-top: -6px;
+      background: #e38f0e;
 }
 
 #back-up {

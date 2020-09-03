@@ -8,6 +8,13 @@
         <meta charset="utf-8">
     </head>
 <body>
+    
+    <script>
+    function lePrank() {
+        alert("u got pranked, it's only a dummy.");
+      }
+    </script>
+    
     <div id="logo" class=""><img src="img/logo.png" height="35px"></div>
     <div id="nav" class="">
         <ul>
@@ -60,6 +67,7 @@
             </div>
         </div>
         <div id="contact" class="section">
+        <div id="contact-wrapper"></div>
             <div class="contact-heading">Get in touch with me.</div>
             <div id="contact-content">
                 <div id="contact-card">
@@ -70,7 +78,28 @@
                     <div class="contact-icons"><img src="img/discord.png" height="25px"><span class="contact-paragraph">emil#1842</span></div> <br>
                 </div>
                 <div id="contact-form">
-                    
+                    <div id="form-container">
+                                <div class="contact-form-subheading">Request a call back.</div>
+                                <label for="fname"></label>
+                                <input type="text" class="name" id="fname" name="firstname" placeholder="First name.">
+                            
+                                <label for="lname"></label>
+                                <input type="text" class="name" id="lname" name="lastname" placeholder="Last name."> <br>
+
+                                <label for="fname"></label>
+                                <input type="text" class="name" id="company" name="company" placeholder="Company.">
+                            
+                                <label for="lname"></label>
+                                <input type="text" class="name" id="Phone" name="Phone" placeholder="Phone."> <br>
+
+                                <label for="mail"></label>
+                                <input type="text" class="mail" id="mail" name="mail" placeholder="E-mail."> <br>
+                            
+                                <label for="message"></label>
+                                <textarea id="message" name="subject" class="message" placeholder="Message." style="height:130px"></textarea> <br>
+                                <br>
+                                <button class="button" onclick="lePrank()">Submit.</button>
+                    </div>
                 </div>
             </div>
         <div id="footer"><span class="footer-text">© 2020 Emil Avara &mdash; powered by <a href="https://github.com/emilavara/emilavara" target="_">Github Pages</a></span></div>
