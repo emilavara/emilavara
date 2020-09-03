@@ -235,11 +235,12 @@ li {
 }
 
 .contact-heading {
-      padding-top: 100px;
+      position: relative;
+      top: -75px;
+      left: -75px;
       font-family: circular-bold;
       font-size: 62pt;
       color: #fff;
-      margin: 0;
 }
 
 .contact-subheading {
