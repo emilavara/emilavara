@@ -86,7 +86,7 @@ li {
 
 .paragraph {
       font-family: circular-medium;
-      font-size: 20pt;
+      font-size: 18pt;
       color: #808080;
       margin: 0;
 }
@@ -173,7 +173,58 @@ li {
 /* Portfolio */
 #portfolio {
       background: #000000;
-      padding: 0px 180px 0 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.portfolio-heading {
+      font-family: circular-bold;
+      font-size: 62pt;
+      color: #fff;
+}
+
+#flex-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+}
+
+.project-container {
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 157, 0, 0.75);
+      margin: 20px;
+      transition: 0.05s linear;
+      border-radius: 3px;
+}
+
+.project-container:hover {
+      transform: scale(1.025);
+}
+
+.project-image {
+      width: 300px;
+      height: 200px;
+      background: mediumaquamarine;
+      color: white;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+}
+
+.project-name {
+      font-family: circular-bold;
+      font-size: 18pt;
+      text-align: center;
+      margin-top: 12px;
+}
+
+.project-category {
+      font-family: circular-black;
+      font-size: 12pt;
+      text-align: center;
+      margin-top: 2px;
 }
 /* eof Portfolio */
 
@@ -223,11 +274,20 @@ li {
       box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.25);
 }
 
+#contact-socials {
+      width: 130px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+}
+
 #contact-picture {
-      padding-top: 40px;
+      padding-top: 45px;
       margin: auto;
       width: 100px;
-      height: 100xp;
+      height: 100px;
 }
 
 #contact-picture img {
@@ -262,6 +322,8 @@ li {
 
 .contact-icons {
       padding-left: 15px;
+      position: relative;
+      top: -10px;
 }
 
 .contact-icons img {
@@ -352,12 +414,6 @@ li {
 }
 /* eof Contact */
 
-
-
-@font-face {
-      font-family: sig;
-      src: url('../font/sig.otf');
-}
 @font-face {
       font-family: circular-bold;
       src: url('../font/circular-bold.otf');
@@ -365,6 +421,11 @@ li {
 @font-face {
       font-family: circular-medium;
       src: url('../font/circular-medium.otf');
+}
+
+@font-face {
+      font-family: circular-black;
+      src: url('../font/circular-black.otf');
 }
 @keyframes fadeIn {from{opacity:0}to{opacity:1}}
 .fade-in {
