@@ -35,4 +35,8 @@
         height: 35px;
         width: 35px;
     }
+
+    #down-arrow {
+        visibility: hidden;
+    }
   }
