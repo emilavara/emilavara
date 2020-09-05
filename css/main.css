@@ -97,7 +97,7 @@ li {
       color: #141414;
 }
 
-/* eof Main */
+/* Main */
 
 /* Home */
 #home {
@@ -159,16 +159,7 @@ li {
       margin: 0;
 }
 
-#adobe {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      margin-right: auto;
-      margin-left: auto;
-      bottom: 40px;
-      text-align: center;
-}
-/* eof About */
+/* About */
 
 /* Portfolio */
 #portfolio {
@@ -231,7 +222,7 @@ li {
       text-align: center;
       margin-top: 2px;
 }
-/* eof Portfolio */
+/* Portfolio */
 
 /* Contact */
 
@@ -331,10 +322,6 @@ li {
       top: -10px;
 }
 
-.contact-icons img {
-
-}
-
 .contact-paragraph {
       font-family: circular-bold;
       font-size: 11pt;
@@ -417,7 +404,7 @@ li {
       margin: auto;
       text-align: center;
 }
-/* eof Contact */
+/* Contact */
 
 @font-face {
       font-family: circular-bold;
