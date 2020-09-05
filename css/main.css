@@ -97,6 +97,23 @@ li {
       color: #141414;
 }
 
+.fade-in {
+      opacity: 0;
+      animation: fadeIn ease-in 1;
+      animation-fill-mode:forwards;
+      animation-duration:0.7s;
+      transition: transform 300ms linear;
+}
+.fade-in.one {
+      animation-delay: 0.3s;
+    } 
+.fade-in.two {
+      animation-delay: 0.8s;
+}
+.fade-in.three {
+      animation-delay: 1.3s;
+}
+
 /* Main */
 
 /* Home */
@@ -225,7 +242,6 @@ li {
 /* Portfolio */
 
 /* Contact */
-
 #contact {
       background: #020202;
       position: relative;
@@ -414,25 +430,9 @@ li {
       font-family: circular-medium;
       src: url('../font/circular-medium.otf');
 }
-
 @font-face {
       font-family: circular-black;
       src: url('../font/circular-black.otf');
 }
+
 @keyframes fadeIn {from{opacity:0}to{opacity:1}}
-.fade-in {
-      opacity: 0;
-      animation: fadeIn ease-in 1;
-      animation-fill-mode:forwards;
-      animation-duration:0.7s;
-      transition: transform 300ms linear;
-}
-.fade-in.one {
-      animation-delay: 0.3s;
-    } 
-.fade-in.two {
-      animation-delay: 0.8s;
-}
-.fade-in.three {
-      animation-delay: 1.3s;
-}
