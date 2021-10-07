@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: HelveticaXD;
+    color: #9a9a9a;
+    overflow: hidden;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-container {
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-container {
+    height: 100vh;
+    width: 70vw;
+}
+
+.text-top-left {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.text-top-right {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 48px;
+    transition: .3s;
+}
+
+.text-top-right:hover, .text-bottom-right:hover {
+    right: 40px;
+}
+
+.text-top-left:hover, .text-bottom-left:hover {
+    left: 40px;
+}
+
+.text-bottom-left {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 48px;
+    transition: .3s;
+}
+
+.text-bottom-right {
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+    text-align: right;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.right-container {
+    background: #202020;
+    height: 100vh;
+    width: 30vw;
+    background: url('../img/right.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 101;
+}
+
+.noise {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 350px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: .025;
+}
+
+@keyframes slideRight {
+    0% {right: 0px}
+    50% {right: 20px}
+    100% {right: 0px}
+}
+
+@keyframes slideLeft {
+    0% {left: 0px}
+    50% {left: 20px}
+    100% {left: 0px}
+}
+
+@font-face {
+    font-family: HelveticaXD;
+    src: url('../font/font.ttf');
+}

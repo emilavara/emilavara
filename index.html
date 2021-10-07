@@ -1,142 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/mobile.css">
-        <link rel="icon" type="image/png" href="img/icons//favicon3.png"/>
-        <title>emil avara &nbsp;&mdash;&nbsp; stockholm based graphic designer</title>
-        <meta charset="utf-8">
-        
+        <title>Emil Avara &mdash; UI Designer & Front-end developer</title>
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="icon" type="image/png" href="img/favicon.png" />
     </head>
-        <body>
-
-            <script>
-            function lePrank() {
-                alert("u got pranked, it's only a dummy.");
-            }
-            </script>
-            
-            <div id="logo" class="fade-in one"><img src="img/icons/logo.png" height="35px"></div>
-            <div id="nav" class="fade-in one">
-                <ul>
-                    <li><a href="#home" class="nav-active">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
+        <body onload="getTime();">
+            <div class="animate__animated animate__fadeIn">
+                <canvas class="noise"></canvas>
             </div>
-                <!--Home-->
-                <div id="home" class="section">
-                    <div id="home-content" class="fade-in two">
-                        <img id="profile-picture" src="img/memoji/memeorange.png" height="140px"> <br>
-                        <span class="heading">Emil Avara.</span> <br>
-                        <span class="subheading">
-                            student, designer & developer.
-                        </span> <br> <br>
-                        <div id="socials" class="">
-                            <a href="https://twitter.com/emilavara" target="_"><img src="img/icons/twitter.png" height="55px"></a> &nbsp;
-                            <a href="https://github.com/emilavara" target="_"><img src="img/icons//github.png" height="55px"></a> &nbsp;
-                            <a href="https://linkedin.com/in/emil-avara-0a0310163/" target="_"><img src="img/icons//linkedin.png" height="55px"></a> &nbsp;
+                <div class="wrapper">
+                    <div class="left-container">
+                        <div class="text-container">
+                            <div class="text-top-left animate__animated animate__fadeInLeft">FRONT END DEVELOPER<br>UI DESIGNER</div>
+                            <div class="text-top-right animate__animated animate__fadeInRight">EMIL AVARA</div>
+                            <div class="text-bottom-left animate__animated animate__fadeInLeft">SITE UNDER CONSTRUCTION</div>
+                            <div id="date" class="text-bottom-right animate__animated animate__fadeInRight">{MONTH, YEAR}<br>STOCKHOLM, SWEDEN</div>
                         </div>
                     </div>
+                    <div class="right-container animate__animated animate__fadeInRight"></div>
                 </div>
-                <!--About-->
-                <div id="about" class="section">
-                    <div id="about-content">
-                        <img id="about-me-picture" src="img/memoji/mewink.png">
-                        <div class="vl"></div>
-                        <div class="heading">Hello, I'm <br> Emil Avara.</div> <br>
-                        <div class="paragraph">I'm a self-taught graphic designer with 6 years of experience in design and <br> 
-                            programming, passionate about designing digital experiences <br> that leave  
-                            a positive impact on people. I'm currently specializing in creating web-based <br>
-                            widgets  for jailbroken iOS devices. While studying on the side.
-                        </div> <br>
-                        <a href="#portfolio"><div class="learn-more">See my portfolio here.</div></a>
-                    </div>
-                </div>
-                <!--Portfolio-->
-                <div id="portfolio" class="section">
-                    <div id="portfolio-content">
-                        <span class="portfolio-heading">My Work.</span>
-                        <div id="flex-grid">                    
-                            <a href="https://repo.twickd.com/package/com.twickd.emil-avara.fuji-forever" target="_"> <div class="project-container">
-                                <div class="project-image"><img src="img/projects/fuji-resize.png" width="300px" height="200px"></div>
-                                <div class="project-name">Fuji Forever <br> &mdash;</div>
-                                <div class="project-category">iOS TWEAK</div>
-                            </div>  </a>
-
-                            <a href="https://repo.packix.com/package/com.yourepo.emilavara.ios95" target="_"><div class="project-container">
-                                <div class="project-image"><img src="img/projects/ios95-resize.png" width="300px" height="200px"></div>
-                                <div class="project-name">iOS95 <br> &mdash;</div>
-                                <div class="project-category">iOS TWEAK & THEME</div>
-                            </div> </a>
-                            
-                            <a href="https://repo.packix.com/package/com.yourepo.emilavara.overcast" target="_"><div class="project-container">
-                                <div class="project-image"><img src="img/projects/overcast-resize.png" width="300px" height="200px"></div>
-                                <div class="project-name">Overcast <br> &mdash;</div>
-                                <div class="project-category">iOS TWEAK</div>
-                            </div> </a>
-                        
-                        </div>
-                    </div>
-                </div>
-                <!--Contact-->
-                <div id="contact" class="section">
-                    <div id="contact-wrapper"></div>
-                        <div id="contact-content">
-                            <div class="contact-heading">Get in touch with me.</div>
-                            <div id="contact-card">
-                                <div id="contact-picture"><img src="img/memoji/mewavetest.png" height="100px"></div>
-                                <div class="contact-subheading">Contact me!</div> <br>
-                                <div class="contact-icons">
-                                    <img src="img/icons//location-2.png" height="25px">
-                                    <span class="contact-paragraph">stockholm, sweden</span>
-                                </div> <br>
-                                <div class="contact-icons">
-                                    <img src="img/icons//mail.png" height="25px">
-                                    <span class="contact-paragraph">emilavara@hotmail.com</span>
-                                </div> <br>
-                                <div class="contact-icons">
-                                    <img src="img/icons//discord.png" height="25px">
-                                    <span class="contact-paragraph">emil#1842</span>
-                                </div> <br>
-                                <div id="contact-socials">
-                                    <a href="https://twitter.com/emilavara" target="_"><img src="img/icons/twitter.png" height="35px"></a> &nbsp;
-                                    <a href="https://github.com/emilavara" target="_"><img src="img/icons/github.png" height="35px"></a> &nbsp;
-                                    <a href="https://linkedin.com/in/emil-avara-0a0310163/" target="_"><img src="img/icons/linkedin.png" height="35px"></a> &nbsp;
-                                </div>
-                            </div>
-                            <div id="contact-form">
-                                <div id="form-container">
-                                    <div class="contact-form-subheading">Request a call back.</div>
-                                        <label for="fname"></label>
-                                        <input type="text" class="name" id="fname" name="firstname" placeholder="First name.">
-                                        
-                                        <label for="lname"></label>
-                                        <input type="text" class="name" id="lname" name="lastname" placeholder="Last name."> <br>
-
-                                        <label for="fname"></label>
-                                        <input type="text" class="name" id="company" name="company" placeholder="Company.">
-                                        
-                                        <label for="lname"></label>
-                                        <input type="text" class="name" id="Phone" name="Phone" placeholder="Phone."> <br>
-
-                                        <label for="mail"></label>
-                                        <input type="text" class="mail" id="mail" name="mail" placeholder="E-mail."> <br>
-                                        
-                                        <label for="message"></label>
-                                        <textarea id="message" name="subject" class="message" placeholder="Message." style="height:130px"></textarea> <br>
-                                        <br>
-                                        <button class="button" onclick="lePrank()">Submit.</button>
-                                </div>
-                            </div>
-                        </div>
-                    <div id="footer"><span class="footer-text">© 2020 Emil Avara &mdash; powered by <a href="https://github.com/emilavara/emilavara" target="_">Github Pages</a></span></div>
-                    <a href="#home"><img id="back-up" src="img/icons//down-arrow.gif" height="105px" title="go back to the top!"></a>
-                </div>
-                
-            <a href="#about"><img id="down-arrow" class="fade-in three" src="img/icons//down-arrow.gif" height="105px"></a>
+            <script src="js/js.js"></script>
         </body>
 </html>
