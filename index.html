@@ -9,11 +9,17 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="icon" type="image/png" href="img/favicon.png" />
     </head>
-        <body onload="getTime();">
-            <div class="animate__animated animate__fadeIn">
+        <body onload="getTime(); loadingTimer();">
+            <div id="loader">
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                </div>    
+                  
+            </div>
+            <div class="animate__animated">
                 <canvas class="noise"></canvas>
             </div>
-                <div class="wrapper">
+                <div id="wrapper">
                     <div class="left-container">
                         <div class="text-container">
                             <div class="text-top-left animate__animated animate__fadeInLeft">FRONT END DEVELOPER<br>UI DESIGNER</div>

@@ -42,3 +42,13 @@ function getTime() {
 
 	document.getElementById("date").innerHTML = monthNames[d.getMonth()] + ", " + y + "<br>STOCKHOLM, SWEDEN";
   }
+
+var x
+function loadingTimer() {
+	x = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+	document.getElementById("loader").style.display = "none";
+	document.getElementById("wrapper").style.display = "grid";
+}
