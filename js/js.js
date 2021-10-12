@@ -1,54 +1,17 @@
-const canvas = document.querySelector('canvas'),
-				 ctx = canvas.getContext('2d')
-
-canvas.width = canvas.height = 128
-
-resize();
-window.onresize = resize;
-
-function resize() {
-	canvas.width = window.innerWidth * window.devicePixelRatio
-	canvas.height = window.innerHeight * window.devicePixelRatio
-	canvas.style.width = window.innerWidth + 'px'
-	canvas.style.height = window.innerHeight + 'px'
-}
-
-function noise(ctx) {
+function showPortfolio() {
+    document.getElementById("left-container").style.animation = "leftContainerMove 1s";
+    document.getElementById("left-container").style.animationFillMode = "forwards";
     
-	const w = ctx.canvas.width,
-				h = ctx.canvas.height,
-				iData = ctx.createImageData(w, h),
-				buffer32 = new Uint32Array(iData.data.buffer),
-				len = buffer32.length
-	  let i = 0
-
-	for(; i < len;i++)
-		
-		if (Math.random() < 0.5) buffer32[i] = 0xffffffff;
-
-		ctx.putImageData(iData, 0, 0);
-}
-
-(function loop() {
-    noise(ctx);
-    requestAnimationFrame(loop);
-})();
-
-function getTime() {
-	const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	var d = new Date();
-	var n = d.getMonth();
-	var y = d.getFullYear();
-
-	document.getElementById("date").innerHTML = monthNames[d.getMonth()] + ", " + y + "<br>STOCKHOLM, SWEDEN";
-  }
-
-var x
-function loadingTimer() {
-	x = setTimeout(showPage, 1500);
-}
-
-function showPage() {
-	document.getElementById("loader").style.display = "none";
-	document.getElementById("wrapper").style.display = "grid";
+    document.getElementById("right-container").style.display = "block";
+    document.getElementById("right-container").style.animation = "rightContainerMove 1s";
+    document.getElementById("right-container").style.animationDelay = "0.5s";
+    document.getElementById("right-container").style.animationFillMode = "forwards";
+    
+    document.getElementById("arrow").style.animation = "turnArrow 0.3s";
+    document.getElementById("arrow").style.animationFillMode = "forwards";
+    
+    document.getElementById("tree-link").style.animation = "linkTreeMove 2s";
+    document.getElementById("tree-link").style.animationDelay = "1s";
+    document.getElementById("tree-link").style.animationFillMode = "forwards";
+    document.getElementById("tree-link").style.display = "block";
 }

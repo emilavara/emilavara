@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emil Avara &mdash; UI Designer & Front-end developer</title>
-        <link rel="stylesheet" href="css/css.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="icon" type="image/png" href="img/favicon.png" />
-    </head>
-        <body onload="getTime(); loadingTimer();">
-            <div id="loader">
-                <div class="loading-container">
-                    <div class="spinner"></div>
-                </div>    
-                  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emil Avara &mdash; UI Designer & Front-end developer</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+    <div class="container">
+        <div id="left-container">
+            <div class="text-container" onclick="showPortfolio()">
+                <div class="name-text animate__animated animate__fadeInUp animate__delay-0s">Emil Avara</div>
+                <div class="role-text animate__animated animate__fadeInUp animate__delay-1s" >Front-end developer & UI Designer</div>
+                <div class="about-text animate__animated animate__fadeInUp animate__delay-2s">Based in Stockholm</div>
+                <div id="indicator"><img class="animate__animated animate__fadeInUp animate__delay-1s" id="arrow" src="img/arrow.svg"></div>
             </div>
-            <div class="animate__animated">
-                <canvas class="noise"></canvas>
+
+            <div id="tree-link">
+                    <div class="link"><a href="https://github.com/emilavara" target="_blank"><i class="fab fa-github"></i></a></div>
+                    <div class="link"><a href="https://twitter.com/emilavara" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                    <div class="link"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="link"><i class="fab fa-dribbble"></i></div>
             </div>
-                <div id="wrapper">
-                    <div class="left-container">
-                        <div class="text-container">
-                            <div class="text-top-left animate__animated animate__fadeInLeft">FRONT END DEVELOPER<br>UI DESIGNER</div>
-                            <div class="text-top-right animate__animated animate__fadeInRight">EMIL AVARA</div>
-                            <div class="text-bottom-left animate__animated animate__fadeInLeft">SITE UNDER CONSTRUCTION</div>
-                            <div id="date" class="text-bottom-right animate__animated animate__fadeInRight">{MONTH, YEAR}<br>STOCKHOLM, SWEDEN</div>
+        </div>
+        <div id="right-container">
+                <div class="right-container-item">
+                    <div class="item-header">Iris</div>
+                    <div class="item-description">A responsive mobile and tablet view for developing and testing mobile first websites and web applications. </div>
+                    <div class="item-category">Application</div>
+                    <div class="item-buttons">
+                        <div class="item-button-container">
+                            <div class="item-button">Source code</div>
+                            <div class="item-button">View project</div>
                         </div>
                     </div>
-                    <div class="right-container animate__animated animate__fadeInRight"></div>
                 </div>
-            <script src="js/js.js"></script>
-        </body>
+                <div class="right-container-item">
+                    <div class="item-header">Fuji</div>
+                    <div class="item-description">A web based lock screen widget for jailbroken iOS devices. Emulating the macOS login screen. Accumulated over 150 000 downloads.</div>
+                    <div class="item-category">iOS Tweak</div>
+                    <div class="item-buttons">
+                        <div class="item-button-container">
+                            <div class="item-button">Source code</div>
+                            <div class="item-button">View project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container-item">
+                    <div class="item-header">bopshop.</div>
+                    <div class="item-description">A fictional but fully functioning clothing store built with React, Node.js and Express. Made as a school project.</div>
+                    <div class="item-category">E-commerce service</div>
+                    <div class="item-buttons">
+                        <div class="item-button-container">
+                            <div class="item-button">Source code</div>
+                            <div class="item-button">View project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container-item">
+                    <div class="item-header">Darrowshire</div>
+                    <div class="item-description">A World of Warcraft private server that I did some graphic design work for. I made them a graphical profile, logo, and website mockup. </div>
+                    <div class="item-category">Graphic design</div>
+                    <div class="item-buttons">
+                        <div class="item-button-container">
+                            <div class="item-button">Src material</div>
+                            <div class="item-button">View project</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
 </html>
