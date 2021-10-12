@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: #010101;
-    font-family: 'SF Pro Display';
+    font-family: sfreg;
     color: white;
     font-weight: 700;
     -webkit-font-smoothing: antialiased;
@@ -45,6 +45,7 @@ a {
     font-size: 19px;
     color: gray;
     font-weight: 600;
+    font-family: sfbold;
     margin-bottom: 0px;
 }
 
@@ -71,6 +72,7 @@ i {
     font-size: 19px;
     color: #E38F0E;
     font-weight: 600;
+    font-family: sfbold;
     margin-bottom: 0px;
 }
 
@@ -107,6 +109,7 @@ i {
     font-size: 19px;
     color: white;
     font-weight: 600;
+    font-family: sfbold;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -195,14 +198,6 @@ i {
     to {transform: rotate(180deg)}
 }
 
-.animation-delay-05s {
-    animation-delay: 0.5s;
-}
-
-.animation-delay-3s {
-    animation-delay: 3s;
-}
-
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
@@ -211,4 +206,14 @@ i {
 @keyframes modalHide {
     0% {opacity: 1; top: 0}
     100% {opacity: 0; top: 100px; }
+}
+
+@font-face {
+    font-family: sfreg;
+    src: url('../fonts/sfreg.ttf');
+}
+
+@font-face {
+    font-family: sfbold;
+    src: url('../fonts/sfbold.ttf');
 }
