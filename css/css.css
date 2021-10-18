@@ -222,7 +222,6 @@ i {
     #left-container {
         margin: auto;
         top: 50%;
-        transform: translate(0, -50%);
         left: 0;
     }
 
