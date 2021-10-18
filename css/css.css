@@ -213,6 +213,7 @@ i {
 @media only screen and (max-width: 600px) {
     body {
         transform: scale(0.75);
+        touch-action: none;
     }
     #container {
       flex-direction: column;
@@ -220,7 +221,7 @@ i {
 
     #left-container {
         margin: auto;
-        top: 45%;
+        top: 46%;
         left: 0;
     }
 
