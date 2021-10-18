@@ -32,6 +32,7 @@ a {
     width: 500px;
     height: 80px;
     position: relative;
+    left: 100px;
 }
 
 .text-container {
@@ -77,8 +78,9 @@ i {
 }
 
 #right-container {
+    position: relative;
     display: block;
-    opacity: 1;
+    opacity: 0;
     width: auto;
     height: auto;
     /* background: red; */
@@ -161,13 +163,13 @@ i {
 }
 
 @keyframes leftContainerMove {
-    from {left: 45%}
-    to {left: 40%}
+    from {left: 100px}
+    to {left: 0}
 }
 
 @keyframes rightContainerMove {
-    0% {top: 60%}
-    100% {top: 50%; opacity: 1}
+    0% {top: 100px}
+    100% {top: 0; opacity: 1}
 }
 
 @keyframes linkTreeMove {
@@ -178,11 +180,6 @@ i {
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
-}
-
-@keyframes modalHide {
-    0% {opacity: 1; top: 0}
-    100% {opacity: 0; top: 100px; }
 }
 
 #preloader {
@@ -223,5 +220,27 @@ i {
 
     #left-container {
         margin: auto;
+        top: 45%;
+        left: 0;
     }
-  }
+
+    #right-container {
+        top: 0;
+    }
+
+    @keyframes leftContainerMove {
+        from {top: 45%}
+        to {top: 0%}
+    }
+    
+    @keyframes rightContainerMove {
+        0% {top: 100px}
+        100% {top: 0; opacity: 1}
+    }
+
+    #tree-link {
+        display: none;
+    }
+
+
+}
