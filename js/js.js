@@ -1,4 +1,4 @@
-function showPortfolio() {
+function portfolioAnimations() {
     document.getElementById("left-container").style.animation = "leftContainerMove 1s";
     document.getElementById("left-container").style.animationFillMode = "forwards";
     
@@ -7,11 +7,23 @@ function showPortfolio() {
     document.getElementById("right-container").style.animationDelay = "0.5s";
     document.getElementById("right-container").style.animationFillMode = "forwards";
     
-    document.getElementById("arrow").style.animation = "turnArrow 0.3s";
-    document.getElementById("arrow").style.animationFillMode = "forwards";
-    
     document.getElementById("tree-link").style.animation = "linkTreeMove 2s";
     document.getElementById("tree-link").style.animationDelay = "1s";
     document.getElementById("tree-link").style.animationFillMode = "forwards";
     document.getElementById("tree-link").style.display = "block";
+}
+
+var x;
+
+function loadingTimer() {
+	x = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+	document.getElementById("preloader").style.display = "none";
+	document.getElementById("container").style.display = "block";
+}
+
+function showPortfolio() {
+    setTimeout(portfolioAnimations, 4500);
 }

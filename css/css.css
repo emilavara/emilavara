@@ -9,18 +9,21 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
+    animation-delay: 1.5s;
 }
 
 a {
     text-decoration: none;
 }
 
-.container {
+#container {
     width: 100vw;
     height: 100vh;
     user-select: none;
     z-index: 1;
+    display: none;
 }
+
 
 #left-container {
     opacity: 1;
@@ -72,13 +75,6 @@ i {
     color: #E38F0E;
     font-weight: 600;
     margin-bottom: 0px;
-}
-
-#indicator {
-    position: relative;
-    bottom: 43px;
-    left: 440px;
-    animation: arrowFloat 2s infinite;
 }
 
 #right-container {
@@ -184,17 +180,6 @@ i {
     100% {top: 450px; opacity: 1}
 }
 
-@keyframes arrowFloat {
-    0% {left: 440px}
-    50% {left: 450px}
-    100% {left: 440px}
-}
-
-@keyframes turnArrow {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(180deg)}
-}
-
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
@@ -203,4 +188,32 @@ i {
 @keyframes modalHide {
     0% {opacity: 1; top: 0}
     100% {opacity: 0; top: 100px; }
+}
+
+#preloader {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    z-index: 101;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.2s forwards;
+}
+
+#preloader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 1.1s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {transform: rotate(0);}
+    to {transform: rotate(359deg);}
 }

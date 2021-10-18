@@ -13,14 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
 </head>
-<body>
-    <div class="container">
+<body onload="loadingTimer(); showPortfolio();">
+    <div id="preloader">
+        <div id="preloader-container">
+            <div id="preloader-spinner"></div>
+        </div>
+    </div>
+    <div id="container">
         <div id="left-container">
             <div class="text-container" onclick="showPortfolio()">
                 <div class="name-text animate__animated animate__fadeInUp animate__delay-0s">Emil Avara</div>
                 <div class="role-text animate__animated animate__fadeInUp animate__delay-1s" >Front-end developer & UI Designer</div>
                 <div class="about-text animate__animated animate__fadeInUp animate__delay-2s">Based in Stockholm</div>
-                <div id="indicator"><img class="animate__animated animate__fadeInUp animate__delay-1s" id="arrow" src="img/arrow.svg"></div>
             </div>
 
             <div id="tree-link">
