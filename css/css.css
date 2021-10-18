@@ -215,7 +215,7 @@ i {
 
 @media only screen and (max-width: 600px) {
     body {
-        transform: scale(0.85);
+        transform: scale(0.75);
     }
     #container {
       flex-direction: column;
