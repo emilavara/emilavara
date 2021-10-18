@@ -22,7 +22,7 @@ a {
     height: 100vh;
     user-select: none;
     z-index: 1;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -190,7 +190,7 @@ i {
     position: relative;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.2s forwards;
@@ -221,7 +221,8 @@ i {
 
     #left-container {
         margin: auto;
-        top: 46%;
+        top: 50%;
+        transform: translate(0, -50%);
         left: 0;
     }
 
@@ -230,7 +231,7 @@ i {
     }
 
     @keyframes leftContainerMove {
-        from {top: 45%}
+        from {top: 50%}
         to {top: 0%}
     }
     
@@ -242,6 +243,4 @@ i {
     #tree-link {
         display: none;
     }
-
-
 }

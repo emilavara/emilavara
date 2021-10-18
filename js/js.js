@@ -25,5 +25,5 @@ function showPage() {
 }
 
 function showPortfolio() {
-    setTimeout(portfolioAnimations, 3000);
+    setTimeout(portfolioAnimations, 4500);
 }
